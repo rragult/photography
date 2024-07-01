@@ -1,0 +1,54 @@
+/* nav start */
+#header{
+    background-color: #f8f9fa;
+    
+}
+
+li{
+    font-size: 16px;
+}
+.nav_head {
+    /* background-image: linear-gradient(to bottom left, rgb(207, 248, 207), #ffefcd, #fff1f9, rgb(206, 233, 252)); */
+    /* background-color: transparent;
+    position: relative;
+    top: 10px; */
+  
+    z-index: 1;
+    
+}
+
+.fa-seedling {
+    color: rgb(32, 238, 5);
+}
+
+a{
+    text-shadow: 5px 0px 2px 0;
+    color: rgb(4, 99, 9);
+    background-color: transparent;
+    
+}
+
+.navbar-toggler.custom_toggler {
+    border-color: rgb(252, 116, 4);
+}
+
+.custom_toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(0, 128, 0, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+}
+#navbarDropdown{
+    cursor: pointer;
+}
+.logout_btn:hover{
+    color: red;
+}
+.logout_btn{
+    background-color: aqua;
+}
+.logout{
+    cursor:auto;
+}
+#userEmail{
+    border-radius: 50%;
+    background-color: aqua;
+    color: black;
+}

@@ -1,0 +1,106 @@
+<!-- section mid -->
+
+<div class="container-fluid mid_con">
+
+    <div class="row row_card1">
+        <div class="col-6 img1_col">
+            <img src="https://static.bhphotovideo.com/explora/sites/default/files/styles/top_shot/public/25899-topshot-shutterstock_353994884.jpg?itok=ZND7NVZ9"
+                alt="gear">
+                </div>
+
+            <div class="col-6 col_body1">
+                <h3><a>My Gear</a></h3>
+                <p>Here is a blog post about all of the gear that I use when taking photographs, making videos,
+                    camping, hiking and being creative. I try to keep it as up to date as possible and it should
+                    serve as a helpful resource for those who wish to know what kit I am using in my videos.
+                </p>
+                <button type="button" class="btn btn_gear"
+                routerLink="/mygear">My Gear List</button>
+            </div>
+        
+
+    </div>
+
+
+    <div class="row row_card2">
+        <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 img2_col">
+            <img class="img-fluid"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCh8B21gYmuewBff0p9qyGANVcd6022e5SkA&usqp=CAU"
+                alt="workshop">
+                </div>
+            <div class="col col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col_body2">
+                <h3><a>My WorkShop</a></h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe omnis in repudiandae aliquid
+                    aspernatur quibusdam pariatur, cumque doloremque aliquam earum veritatis veniam itaque
+                    explicabo
+                    a dolorum delectus mollitia sunt odit.</P>
+                <button type="button" class="btn btn_learn_more">Lean More</button>
+            </div>
+        </div>
+
+
+
+    <div class="row row_card3">
+        <div class="col-6 img3_col">
+            <img src="https://mo-creation-design.com/wp-content/uploads/2020/01/Moments-of-nature-01-1150x550.jpg"
+                alt="Photobook">
+                </div>
+            <div class="col-6 col_body3">
+                <h3><a>My PhotoBook</a></h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolore nemo? Amet
+                    exercitationem
+                    dolore porro provident repellendus maiores fugiat blanditiis, laboriosam laborum aperiam nam
+                    eveniet natus vitae autem sunt suscipit!</p>
+                <button type="button" class="btn btn_signup">SignUp</button>
+            </div>
+        </div>
+
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-8 col-lg-6 m-auto pt-5 mail_col">
+            <form #f="ngForm">
+
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                    <input id="subscribe_email_input" type="email" class="form-control"
+                        placeholder="Enter your email address" required name="subscribe_email_input"
+                        ngModel 
+                        #subscribe_email_input="ngModel">
+                    
+                    <button type="button" class="btn input-group-text span_sub" id="subscriber" (click)="onSubscriber()"
+                    [disabled]=!f.valid>
+                        Subscribe
+                    </button>
+                    
+                      
+                </div>
+                <p class="mail-para">Be the first to know about workshops, events, new ltd edition prints and more.
+                    I
+                    will
+                    respect your<a href="#"> email privacy.</a></p>
+            </form>
+          
+        </div>
+    </div>
+
+    <!-- table start -->
+    <div>
+        <table class="table table-hover" *ngIf=evaluateMail>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>E-mail</th>
+                    <th>Date/Time</th>
+                </tr>
+            </thead>
+            <tbody *ngIf=arr.length>
+                <tr *ngFor="let value of arr;  let i=index">
+                    <th>{{i+1}}</th>
+                    <td>{{value}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</div>

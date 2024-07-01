@@ -1,0 +1,105 @@
+<!-- navbar start -->
+<section id="header">
+  <nav class="nav_head navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/home"
+        ><i class="fas fa-seedling"></i> RAG Photography</a
+      >
+      <button
+        class="navbar-toggler custom_toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              routerLink="/gallery"
+              disabled="!isAuthenticated"
+              >Gallery</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              id="navbarDropdown"
+              data-bs-toggle="dropdown"
+            >
+              Shop
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" routerLink="/shop/landscape"
+                  >Landscape</a
+                >
+              </li>
+              <li><a class="dropdown-item" routerLink="/shop/bird">Bird</a></li>
+              <li>
+                <a class="dropdown-item" routerLink="/shop/macro">Macro</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item" routerLink="/shop/portraits"
+                  >Portraits</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link login_btn"
+              routerLink="/login"
+              *ngIf="!isAuthenticated"
+            >
+              Log In
+            </a>
+          </li>
+         
+          <li class="nav-item dropdown logout" *ngIf="isAuthenticated">
+            <a
+              class="nav-link dropdown-toggle"
+              id="userEmail"
+              data-bs-toggle="dropdown"
+              role="button"
+            >
+              {{email | mailShortPipe}}
+            </a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item ">
+                <a
+                  class="logout_btn"
+                  (click)="onLogout()"
+                  type="button"
+                >
+                  Log Out
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<!-- navbar end -->

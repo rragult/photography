@@ -1,0 +1,162 @@
+.mid_con{
+   margin-top: auto;
+}
+
+.mail-para, .mail-para>a {
+    font-size: 12px;
+    margin: 3px auto;
+    text-decoration: none;
+}
+
+/* mid section */
+
+.img1_col>img, .img2_col>img, .img3_col>img  {
+    width: 400px;
+    height: 250px;
+    background-color: #f8f9fa;
+
+}
+
+.row_card1 {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    background-color: #f8f9fa;
+    margin-top: 20px;
+    width: 860px;
+    height: 280px;
+    border-radius: 8px;
+    
+}
+
+.row_card2{
+    display: flex;
+    justify-content: end;
+    align-content: center; 
+    background-color: #f8f9fa;
+    margin-top: 15px;
+    margin-left:auto;
+    width: 860px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+.row_card3 {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    background-color: #f8f9fa;
+    margin-top: 15px;
+    width: 860px;
+    height: 280px;
+    border-radius: 8px;
+}
+
+
+
+h3 a {
+    text-decoration: none;
+    color: rgb(71, 74, 76);
+    font-weight: 500;
+}
+
+h3~p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn_gear {
+    transition: .1s ease-in-out;
+}
+
+.btn_learn_more {
+    transition: .1s ease-in-out;
+}
+
+.btn_signup {
+    transition: .1s ease-in-out;
+}
+
+.btn_gear:hover {
+    transform: scale(1.1);
+}
+
+.btn_learn_more:hover {
+    transform: scale(1.1);
+}
+
+.btn_signup:hover {
+    transform: scale(1.1);
+}
+
+/* @media (max-width: 768px) {
+    .col_body1 {
+        clear: both;
+        text-align: justify;
+    }
+    .img1_col img {
+        clear: both;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .col_body2 {
+        clear: both;
+        text-align: justify;
+    }
+    .img2_col img {
+        clear: both;
+        margin: auto auto 10px;
+    }
+    .row_card2 {
+        justify-content: left;
+    }
+}
+
+@media (max-width: 768px) {
+    .col_body3 {
+        clear: both;
+        text-align: justify;
+    }
+    .img3_col img {
+        clear: both;
+        margin-bottom: 10px;
+    }
+} */
+
+/* end mid section */
+
+.span_sub:hover {
+    color: rgb(86, 142, 247);
+}
+
+.btn_learn_more, .btn_gear, .btn_signup {
+    border: 1px solid #0d6efd;
+}
+
+.btn_learn_more:hover, .btn_gear:hover, .btn_signup:hover {
+    color: #0d6efd;
+}
+
+.msg_row {
+    text-align: center;
+    margin: auto;
+}
+
+#subscriber {
+    background-color: #3183ff;
+    border: 1px solid #ced4da;
+    color: #f8f9fa;
+}
+
+#subscriber:hover {
+    color: white;
+    background-color: #0267ff;
+}
+
+/* table */
+
+.table {
+    margin-top: 10px;
+}

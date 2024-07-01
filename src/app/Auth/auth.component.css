@@ -1,0 +1,64 @@
+.r1 {
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.c1 {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #F2F2F2;
+    text-align: center;
+}
+.btn-1 {
+    background-color: #04D960;
+    color: #F2F2F2;
+}
+
+.para-2 {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.para-2>span {
+    color: #019e45;
+}
+
+.para-2>span:hover {
+    font-size: 12px;
+    color: #04D960;
+    cursor: pointer;
+}
+
+.para {
+    margin-top: 8px;
+}
+
+i {
+    color: #1B8C42;
+}
+
+a:link {
+    color: #04D960;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1B8C42;
+}
+
+#email.ng-touched.ng-invalid {
+    border-color: crimson;
+}
+
+#password.ng-touched.ng-invalid {
+    border-color: crimson;
+}
+
+.email_validation>p {
+    color: crimson;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,51 @@
+/* footer */
+
+.fa-arrow-alt-circle-up {
+    position: relative;
+    float: right;
+    margin-right: 0px;
+    color: blue;
+    right: 10px;
+}
+
+.fa-arrow-alt-circle-up:hover {
+   background-color:  blue;
+   color: white;
+   border-radius: 100%;
+}
+
+.footer_row {
+    clear: both;
+    background-color: #444;
+    color: #fff;
+}
+
+.social_col {
+    text-align: right;
+}
+
+.social_col i {
+    padding-right: 10px;
+}
+
+.footer_col p {
+    font-size: 12px;
+}
+
+.fa-twitter:hover, .fa-facebook-square:hover {
+    color: #1DA1F2;
+    transform: scale(1.1);
+    transition: all 1 .1s ease-in-out;
+}
+
+.fa-instagram:hover, .fa-youtube:hover {
+    color: #FF0000;
+    transform: scale(1.1);
+    transition: all 1 .1s ease-in-out;
+}
+
+.fa-envelope:hover {
+    color: rgb(255, 120, 9);
+    transform: scale(1.1);
+    transition: all 1 .1s ease-in-out;
+}

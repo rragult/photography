@@ -1,0 +1,79 @@
+.container-fluid {
+    /* background-color: #f8f9fa; */
+    background-color: white;
+    padding: 10px;
+}
+h3{
+    font-weight:400;
+}
+.gear_list{
+    margin: 10px;
+    border-radius: 10px;
+    background-color:white;
+    height: 50px;
+    padding: 8px;
+    width: 200px;
+}
+.gear_con{
+    background-color: #f8f9fa;
+    width: 640px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 15px;
+    margin-left: 10px;
+    margin-right: auto;
+}
+img {
+    height: 150px;
+    width: 175px;
+}
+
+.camera, .anamorphic_lens, .tripod {
+    margin-right: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 640px;
+}
+
+.lens, .gimbal, .flashes {
+    margin-left: auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 640px;
+}
+
+.cam_row, .an_len_row, .tripod_row {
+    background-color:  #f8f9fa;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.lens_row, .gimbal_row, .flashes_row {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.cam_col1, .lens_col1, .an_len_col1, .gimbal_col1, .tripod_col1, .flashes_col1 {
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 10px;
+    height: 80px;
+    padding: 8px;
+}
+
+
+.cam_col2>.row, .lens_col2>.row, .an_len_col2>.row, .gimbal_col2>.row, .tripod_col2>.row, .flashes_col2>.row {
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+    padding-right: 5px;
+    transition: .1s ease-in-out;
+
+}
+.cam_col2>.row:hover, .lens_col2>.row:hover, .an_len_col2>.row:hover, 
+.gimbal_col2>.row:hover, .tripod_col2>.row:hover, .flashes_col2>.row:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
